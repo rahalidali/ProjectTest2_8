@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('front-end/assets/css/bootstrap.min.css')}}">
+    <link href="{{ asset('front-end/jquery-ui/jquery-ui.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('front-end/assets/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('front-end/assets/css/font.css')}}">
+    <link rel="stylesheet" href="{{ asset('front-end/assets/css/style.css')}}">
+
+</head>
+<body ng-app="myApp">
+
+<div class="full-container">
+    <div ui-view></div>
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="{{ asset('front-end/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{ asset('front-end/assets/js/bootstrap.min.js')}}"></script>
+
+<script src="{{ asset('front-end/app/angular/angular.min.js')}}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+<script src="{{ asset('front-end/app/angular/angular-animate.min.js')}}"></script>
+<script src="{{ asset('front-end/app.js')}}"></script>
+<script src="{{ asset('front-end/app/controllers/drag&dropData.js')}}"></script>
+<script src="{{ asset('front-end/app/controllers/drag&dropDirective.js')}}"></script>
+<script src="{{ asset('front-end/app/controllers/homeController.js')}}"></script>
+<script src="{{ asset('front-end/app/controllers/formsController.js')}}"></script>
+<script src="{{ asset('front-end/app/controllers/stepController.js')}}"></script>
+<script src="{{ asset('front-end/app/controllers/structureController.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+</body>
+</html>

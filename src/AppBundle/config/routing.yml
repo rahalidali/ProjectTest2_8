@@ -1,0 +1,8 @@
+
+_sheet:
+    path:     /sheet/{id}
+    defaults: { _controller: AppBundle:Sheet:getSheet }
+
+_sheet_list:
+        path:     /sheet-list
+        defaults: { _controller: AppBundle:Sheet:getListSheet }

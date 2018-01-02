@@ -1,0 +1,58 @@
+<!-- Page header -->
+<div class="page-header page-header-default navbar-fixed-top">
+    <div class="page-header-content">
+        <a href="{{ path('homepage') }}">
+            <img src="{{ asset('front-end/assets/images/logo.png') }}" class="img-responsive" style="width:120px;">
+        </a>
+
+        <div class="heading-elements">
+            <ul class="nav navbar-nav navbar-right custom-navbar">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle user-toggle" data-toggle="dropdown" style="padding: 9px 9px 5px 6px;">
+                        <img src="{{ asset('assets/images/flags/gb.png') }}" class="position-left" alt="">
+                        English
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="french">No other languages</a></li>
+                        <!--<li><a class="french"><img src="{{ asset('assets/images/flags/fr.png') }}" alt=""> French</a></li>-->
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle user-toggle" data-toggle="dropdown" >
+                        <span>
+                         <i class="fa fa-user" aria-hidden="true"></i>
+                            Rahali Dali (59 min)
+                        </span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="{{ path('homepage') }}"><i class="icon-user-plus"></i> My Account</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-cog5"></i> Profile settings</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li><a href="{{ path('homepage') }}"><i class="icon-home2 position-left"></i> Home</a></li>
+            {% if app.request.attributes.get('_route') == "homepage" %}
+                <li class="active">My Account</li>
+            {% elseif app.request.attributes.get('_route') == "onboarding" %}
+                <li class="active">Onboarding Workflow</li>
+            {% endif %}
+        </ul>
+
+        <ul class="breadcrumb-elements">
+            <li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li>
+        </ul>
+    </div>
+</div>
+<!-- /page header -->
